@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <center> <title>add</title><center>
+    
+  </head>
+  <body background= "C:\Users\MARK FLO\memo\www\img\mama.jpg">
+  </body>
+
+
+<table>
+    <br style = “line-height:40;”><br>
+         <br style = “line-height:35;”><br>
+    <tr>
+        <td colspan="3">
+            <textarea id='inputTextToSave' cols="30" rows="23"></textarea>
+        </td>
+    </tr>
+  
+    
+
+
+
+</table>
+</form> 
+
+ <button id = 'joyc'  style="height: 50px; width: 300px" onclick="Save()">Save</button>
+ <br style = “line-height:30;”><br>
+ <input type="reset"  style="height: 50px; width: 300px" value=back onclick = "window.location.href='C:/Users/MARK FLO/memo/www/index.html'">
+<script type="text/javascript">
+
+function Save()
+{
+    var Save = document.getElementById('inputTextToSave').value;
+
+    localStorage.setItem("name" ,Save);
+}
+
+
+</script>                               
